@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse reusable and eco-friendly products at EcoCart.">
+    <title>Shop | EcoCart</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="shop">
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="EcoCart home"><span class="brand-mark">♻</span><span>Eco<span>Cart</span></span></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+        <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+            <a href="index.html">Home</a><a class="active" href="shop.html">Shop</a><a href="product.html">Product Details</a><a href="index.html#impact">Our Impact</a><a href="index.html#about">About</a>
+        </nav>
+        <a class="cart-link" href="#products" aria-label="Shopping cart"><span>🛒</span> Cart <span class="cart-count" id="cartCount">0</span></a>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <div class="section-wrap"><span class="eyebrow">MAKE A CONSCIOUS CHOICE</span><h1>Find your everyday<br><span>eco essentials.</span></h1><p>Useful products, thoughtful materials, and simple swaps for a greener lifestyle.</p><div class="breadcrumb"><a href="index.html">Home</a><span>/</span><strong>Shop</strong></div></div>
+        </section>
+
+        <section class="section-wrap shop-layout section-space" id="products">
+            <aside class="filter-panel">
+                <div class="filter-heading"><h2>Filters</h2><button class="clear-button" id="clearFilters">Clear all</button></div>
+                <div class="filter-group">
+                    <h3>Categories <span class="info-wrap"><button class="info-button" aria-label="Category filter help">i</button><span class="tooltip">Choose a category to narrow the product list.</span></span></h3>
+                    <label class="check-row"><input type="radio" name="category" value="all" checked> All products</label>
+                    <label class="check-row"><input type="radio" name="category" value="reusable"> Reusable bottles</label>
+                    <label class="check-row"><input type="radio" name="category" value="bags"> Eco bags</label>
+                    <label class="check-row"><input type="radio" name="category" value="kitchen"> Kitchen essentials</label>
+                    <label class="check-row"><input type="radio" name="category" value="home"> Sustainable home</label>
+                </div>
+                <div class="filter-group">
+                    <h3>Price range</h3>
+                    <div class="price-inputs"><label>Min ₱<input id="minPrice" type="number" min="0" placeholder="0" value="0" aria-label="Minimum price"></label><label>Max ₱<input id="maxPrice" type="number" min="0" placeholder="5000" value="5000" aria-label="Maximum price"></label></div>
+                    <p class="field-help">Suggested range: ₱0 – ₱5,000</p>
+                </div>
+                <div class="filter-group">
+                    <h3>Product benefits</h3>
+                    <label class="check-row"><input type="checkbox" id="reusableOnly"> Reusable products</label>
+                    <label class="check-row"><input type="checkbox" id="naturalOnly"> Natural materials</label>
+                </div>
+                <div class="filter-tip"><span>🌱</span><p><strong>Need a suggestion?</strong><br>Start with a reusable bottle or shopping bag for an easy everyday swap.</p></div>
+            </aside>
+
+            <div class="shop-content">
+                <div class="shop-toolbar">
+                    <div><h2>All products</h2><p id="resultCount">Showing products</p></div>
+                    <div class="toolbar-controls">
+                        <label class="search-box"><span aria-hidden="true">⌕</span><input id="productSearch" type="search" list="searchSuggestions" placeholder="Search eco products..." aria-label="Search products"><datalist id="searchSuggestions"><option value="Reusable bottle"><option value="Canvas bag"><option value="Food container"><option value="Bamboo brush"></datalist></label>
+                        <label class="sort-select">Sort by <select id="sortProducts" aria-label="Sort products"><option value="popular">Popularity</option><option value="low">Price: Low to high</option><option value="high">Price: High to low</option><option value="name">Name: A to Z</option></select></label>
+                    </div>
+                </div>
+                <div class="active-filters" id="activeFilters"><span>All products</span></div>
+                <div class="product-grid shop-product-grid" id="shopProducts"></div>
+                <div class="empty-state" id="emptyState" hidden><span>🌿</span><h3>No products found</h3><p>Try a different search term or clear your filters.</p><button class="btn btn-primary" id="emptyClear">Clear filters</button></div>
+            </div>
+        </section>
+
+        <section class="section-wrap encouragement section-space">
+            <div><span class="eyebrow">A LITTLE REMINDER</span><h2>Progress, not perfection.</h2><p>Choosing one reusable product is already a positive step. Keep going at your own pace.</p></div>
+            <div class="streak-card"><span aria-hidden="true">🔥</span><div><strong>3-day green streak</strong><small>Sample encouragement counter</small></div></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="section-wrap footer-main">
+            <div class="footer-brand"><a class="brand brand-footer" href="index.html"><span class="brand-mark">♻</span><span>Eco<span>Cart</span></span></a><p>Thoughtful products for a greener everyday.</p></div>
+            <div><strong>Explore</strong><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="product.html">Product details</a></div>
+            <div><strong>Learn</strong><a href="index.html#about">About EcoCart</a><a href="index.html#impact">Our impact</a><a href="https://www.un.org/sustainabledevelopment/sustainable-consumption-production/" target="_blank" rel="noopener">Responsible consumption</a></div>
+            <div><strong>Stay connected</strong><p>Get simple ideas for sustainable living.</p><a class="footer-cta" href="index.html">Back to home →</a></div>
+        </div>
+        <div class="section-wrap footer-bottom"><span>© 2026 EcoCart. Student project prototype.HEBRON AYAN KEN</span><span>Images: Unsplash. Add exact photographer credits before submission.</span></div>
+        <a class="privacy-qr" href="#privacyInfo" aria-label="Open EcoCart privacy information"><span class="qr-art" aria-hidden="true">▦</span><span>Privacy<br>information</span></a>
+        <div class="privacy-note" id="privacyInfo"><strong>Privacy information</strong><p>This student prototype does not collect or transmit personal information. The QR-style mark is a placeholder, not an official Philippine government seal or certification.</p></div>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product details for the EcoCart reusable bamboo bottle.">
+    <title>Product Details | EcoCart</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="product">
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="EcoCart home"><span class="brand-mark">♻</span><span>Eco<span>Cart</span></span></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+        <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+            <a href="index.html">Home</a><a href="shop.html">Shop</a><a class="active" href="product.html">Product Details</a><a href="index.html#impact">Our Impact</a><a href="index.html#about">About</a>
+        </nav>
+        <a class="cart-link" href="shop.html#products" aria-label="Shopping cart"><span>🛒</span> Cart <span class="cart-count" id="cartCount">0</span></a>
+    </header>
+
+    <main>
+        <div class="section-wrap product-breadcrumb breadcrumb"><a href="index.html">Home</a><span>/</span><a href="shop.html">Shop</a><span>/</span><strong>Reusable Bamboo Bottle</strong></div>
+
+        <section class="section-wrap product-detail-layout">
+            <div class="product-gallery">
+                <div class="main-product-image"><img id="mainProductImage" src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=1000&q=85" alt="Reusable water bottle in a neutral setting"></div>
+                <div class="thumbnail-row">
+                    <button class="thumbnail active" data-image="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=1000&q=85" aria-label="Show bottle image one"><img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=180&q=70" alt=""></button>
+                    <button class="thumbnail" data-image="https://images.unsplash.com/photo-1523362628745-0c100150b504?auto=format&fit=crop&w=1000&q=85" aria-label="Show bottle image two"><img src="https://images.unsplash.com/photo-1523362628745-0c100150b504?auto=format&fit=crop&w=180&q=70" alt=""></button>
+                    <button class="thumbnail" data-image="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1000&q=85" aria-label="Show lifestyle image"><img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=180&q=70" alt=""></button>
+                </div>
+            </div>
+
+            <div class="product-information">
+                <span class="product-tag">BESTSELLER · REUSABLE</span>
+                <div class="rating-row"><span class="stars" aria-label="Five out of five stars">★★★★★</span><span>4.9 (sample rating)</span></div>
+                <h1>Reusable Bamboo Bottle</h1>
+                <p class="product-subtitle">A simple everyday companion for less single-use plastic.</p>
+                <div class="detail-price">₱450.00 <del>₱550.00</del><span class="discount">18% OFF</span></div>
+                <p class="stock-message"><span class="stock-dot"></span> Available for order</p>
+                <div class="stock-progress"><span></span></div>
+                <p class="field-help">Availability shown for this classroom prototype.</p>
+                <div class="detail-divider"></div>
+
+                <div class="option-row">
+                    <label for="bottleColor">Color <span class="info-wrap"><button class="info-button" type="button" aria-label="Color selection help">i</button><span class="tooltip">Choose the color you prefer before adding the product to your cart.</span></span></label>
+                    <select id="bottleColor"><option value="Natural">Natural</option><option value="Forest Green">Forest Green</option><option value="Sand Beige">Sand Beige</option></select>
+                </div>
+                <div class="option-row">
+                    <label for="quantity">Quantity</label>
+                    <div class="quantity-control"><button type="button" id="qtyMinus" aria-label="Decrease quantity">−</button><input id="quantity" type="number" value="1" min="1" max="10" aria-label="Product quantity"><button type="button" id="qtyPlus" aria-label="Increase quantity">+</button></div>
+                </div>
+                <p class="field-error" id="quantityError" aria-live="polite"></p>
+                <div class="detail-actions"><button class="btn btn-primary" id="addDetailCart">Add to Cart</button><button class="btn btn-outline" id="buyNow">Buy Now</button></div>
+                <p class="inline-success" id="productSuccess" role="status" aria-live="polite"></p>
+
+                <div class="benefit-list">
+                    <div><span>↻</span><p><strong>Reusable design</strong><small>Made for repeated everyday use.</small></p></div>
+                    <div><span>♧</span><p><strong>Thoughtful materials</strong><small>Product material details are illustrative and should be verified with the supplier.</small></p></div>
+                    <div><span>♡</span><p><strong>Simple sustainable swap</strong><small>Help reduce reliance on single-use bottles.</small></p></div>
+                </div>
+                <div class="personal-message"><span>🌱</span><p><strong>A good choice!</strong> Reusable habits grow one purchase at a time.</p></div>
+            </div>
+        </section>
+
+        <section class="section-wrap product-description section-space">
+            <div class="description-tabs"><span class="selected">Description</span><span>Materials & care</span><span>Delivery information</span></div>
+            <h2>Make hydration a greener habit.</h2>
+            <p>The Reusable Bamboo Bottle is presented as an everyday alternative to disposable drink containers. Bring it to class, work, or your next outdoor activity. Select your preferred color and quantity before adding it to your cart.</p>
+            <p class="small-disclaimer">Prototype note: Product specifications, prices, availability, and ratings are sample content for the student project and must be confirmed before a real launch.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="section-wrap footer-main">
+            <div class="footer-brand"><a class="brand brand-footer" href="index.html"><span class="brand-mark">♻</span><span>Eco<span>Cart</span></span></a><p>Thoughtful products for a greener everyday.</p></div>
+            <div><strong>Explore</strong><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="product.html">Product details</a></div>
+            <div><strong>Learn</strong><a href="index.html#about">About EcoCart</a><a href="index.html#impact">Our impact</a><a href="https://www.un.org/sustainabledevelopment/sustainable-consumption-production/" target="_blank" rel="noopener">Responsible consumption</a></div>
+            <div><strong>Stay connected</strong><p>Get simple ideas for sustainable living.</p><a class="footer-cta" href="shop.html">Continue shopping →</a></div>
+        </div>
+        <div class="section-wrap footer-bottom"><span>© 2026 EcoCart. Student project prototype. HEBRON AYAN KEN</span><span>Images: Unsplash. Add exact photographer credits before submission.</span></div>
+        <a class="privacy-qr" href="#privacyInfo" aria-label="Open EcoCart privacy information"><span class="qr-art" aria-hidden="true">▦</span><span>Privacy<br>information</span></a>
+        <div class="privacy-note" id="privacyInfo"><strong>Privacy information</strong><p>This student prototype does not collect or transmit personal information. The QR-style mark is a placeholder, not an official Philippine government seal or certification.</p></div>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="js/script.js"></script>
+</body>
+</html>
